@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #95c050 0%, #17f50b 100%);
+    height: 100%;
+}
+
+.navbar {
+    background-color: #7e6207;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Supaya navbar tetap di atas elemen lain */
+}
+
+.navbar h1 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.navbar nav {
+    margin-top: 10px;
+}
+
+.navbar .menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar .menu li {
+    margin: 5px;
+}
+
+.navbar .menu a {
+    color: rgb(246, 245, 245);
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #444444;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar .menu a:hover {
+    background-color: #408fbd;
+}
+
+/* Tambahkan padding-top ke body untuk menghindari konten tertutup navbar */
+body {
+    padding-top: 100px; /* Sesuaikan dengan tinggi navbar */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.footer-content p {
+    margin: 0;
+    padding: 5px;
+}
+
+.footer-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-menu li {
+    margin: 5px;
+}
+
+.footer-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.footer-menu a:hover {
+    color: #ddd;
+}
+
+.code-box, .output-box {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    text-align: left; /* Align text to the left */
+}
+
+pre {
+    margin: 0;
+    overflow: auto; /* Add scroll bar if content overflows */
+}
+
+code {
+    display: block;
+    white-space: pre; /* Preserve formatting of whitespace and line breaks */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+/* General styling for the welcome class */
+.welcome {
+    
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling the heading */
+.welcome h1 {
+    font-size: 2.5em;
+    color: rgb(10, 10, 10);
+    /* width: 60%;   */
+    /* margin: 0 auto; */
+    animation: fadeIn 2s ease-in-out;
+    text-align: center;
+}
+
+/* Styling the paragraph */
+.welcome p {
+    font-size: 1.2em;
+    color: white;
+    margin-top: 10px;
+    width: 60%;
+    margin: 10px auto;
+    animation: fadeIn 3s ease-in-out;
+}
+
+/* Styling the button */
+.welcome button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeIn 4s ease-in-out;
+}
+
+/* Button hover effect */
+.welcome button:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+}
+
+/* Keyframes for the fadeIn animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.kontainer {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.konten-utama {
+    flex: 1;
+}
+
+.poto {
+    width: 200px;
+    height: 200px;
+    background-color: #333;
+    border-radius: 50%; /* Mengatur bentuk lingkaran */
+    overflow: hidden; /* Memastikan foto profil tidak keluar dari batas lingkaran */
+    border: 2px solid #ccc; /* Memberi sedikit border pada lingkaran */
+  }
+
+  .profile-pic {
+    width: 100%;
+    height: auto;
+    margin-top: -70px;
+    margin-left: -6px;
+  }
+
